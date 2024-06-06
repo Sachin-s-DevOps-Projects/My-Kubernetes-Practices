@@ -16,4 +16,20 @@ Before using `kubectl`, ensure you have:
 - View cluster nodes:
   ```bash
   kubectl get nodes
+- View cluster nodes' entire details:
+  ```bash
+  kubectl get nodes -o wide
+- View cluster pods:
+  ```bash
+  kubectl get pods
+- View cluster pods' more details:
+  ```bash
+  kubectl get pods -o wide
+- View specific pod's entire details:
+  ```bash
+  kubectl describe pod <pode_name> 
+- Remove a pod:
+  ```bash
+  kubectl delete pod <pode_name>
 
+  
