@@ -22,6 +22,13 @@ Before using `kubectl`, ensure you have:
 - View cluster pods:
   ```bash
   kubectl get pods
+- To login to the Kubernete cluster:
+  
+  #### if we use minikube as our K8s distribution,
+  ```bash
+  minikube ssh <master_node/worker_node IP address>
+  ```
+  
 - View cluster pods' more details:
   ```bash
   kubectl get pods -o wide
