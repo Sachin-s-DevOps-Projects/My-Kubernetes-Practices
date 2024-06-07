@@ -79,3 +79,8 @@ Before using `kubectl`, ensure you have:
   It will display all actions which happend to the pods
   ```bash
   kubectl get pods -w
+```
+- Go inside the pod:
+  ```bash
+  kubectl exec -it <pod-name> /bin/bash
+
