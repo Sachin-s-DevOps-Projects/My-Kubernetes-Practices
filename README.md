@@ -91,7 +91,11 @@ This will take a few minutes to create............
 
 After a few mins, run the below command to verify the cluster installation.
 
+First check whether there are clusters or not
 ```
-kops validate cluster demok8scluster.k8s.local
+kops get clusters --state=s3://<S3 bucket name>
+```
+```
+kops validate cluster <cluster_name> --state=s3://<S3 bucket name>
 ```
 
