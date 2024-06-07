@@ -14,7 +14,13 @@ Before using `kubectl`, ensure you have:
 ## Basic Commands
 
 ### View Cluster Information
-
+- Create a pod or deployment:
+  >NOTE: Before this, you should have created a ymal file including all configurations
+  ```bash
+  kubectl apply -f pod.yaml
+  ```
+  ```bash
+  kubectl apply -f development.yaml
 - View cluster nodes:
   ```bash
   kubectl get nodes
@@ -34,7 +40,7 @@ Before using `kubectl`, ensure you have:
   curl <cluster IP address>
   ```
   
-- View cluster pods' more details:
+- View cluster pods' more details (To get IP Address of the pods):
   ```bash
   kubectl get pods -o wide
 - View specific pod's entire details:
@@ -52,4 +58,24 @@ Before using `kubectl`, ensure you have:
 - To verify logs of a specific  pod:
   ```bash
   kubectl logs <pode_name>
-  
+- List-out all deployements:
+  ```bash
+  kubectl get deploy
+- List-out all replicaSets:
+  ```bash
+  kubectl get rs
+ - List out all resources that are available in particular namespace
+   #### It will list out all kubernetes pods, deployments, services.
+  ```bash
+  kubectl get all
+```
+   #### If you want list out information for all the namespaces,
+  ```bash
+  kubectl get all -A
+  ````
+ It will list out  for all the namespaces, all the application in your cluster  
+ - Watch at pods what's going on:
+   
+  It will display all actions which happend to the pods
+  ```bash
+  kubectl get pods -w
