@@ -91,10 +91,11 @@ This will take a few minutes to create............
 
 After a few mins, run the below command to verify the cluster installation.
 
-First check whether there are clusters or not
+First, Get the cluster name
 ```
 kops get clusters --state=s3://<S3 bucket name>
 ```
+>NOTE We should add "--state=s3://<S3 bucket name>" command , because that's place where we have stored  Cluster's configuration files 
 ```
 kops validate cluster <cluster_name> --state=s3://<S3 bucket name>
 ```
