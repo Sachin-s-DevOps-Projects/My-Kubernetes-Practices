@@ -1,7 +1,11 @@
-# Kubernetes-Zero-to-Hero
-Creating this repo with an intent to make Kubernetes easy for begineers. This is a work-in-progress repo.
+# Kubernetes
+This repo was created to show how to create Kubernetes cluster with kops + aws ec2 instance.
 
 ## Kubernetes Installation Using KOPS on EC2
+
+kops (Kubernetes Operations) is an open-source tool developed by Kubernetes to create, manage, and maintain Kubernetes clusters. 
+It simplifies the process of setting up a production-grade Kubernetes cluster by providing automation and management capabilities. 
+kops supports cluster provisioning on various cloud platforms loke AWS, GCP, AZURE, ..etc.
 
 ### Create an EC2 instance or use your personal laptop.
 
