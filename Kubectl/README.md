@@ -43,6 +43,17 @@ Before using `kubectl`, ensure you have:
 - View cluster pods' more details (To get IP Address of the pods):
   ```bash
   kubectl get pods -o wide
+  ```
+  If you want to understand how kubectl is talking to kubernetes API server and what is happening
+  behind the scenes when you run the "kubectl get pods" command, then use this
+  ````
+  kubectl get pods -v=7
+  ````
+  ````
+  kubectl get pods -v=9
+  ````
+  > NOTE: 9 is the maximum verbosity level. It will return more information about
+  > API call rather than v=7
 - View specific pod's entire details:
   ```bash
   kubectl describe pod <pode_name>
