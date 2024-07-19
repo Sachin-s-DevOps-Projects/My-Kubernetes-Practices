@@ -92,6 +92,9 @@ Before using `kubectl`, ensure you have:
   kubectl get pods -w
 ```
 - Go inside the pod:
+  ````bash
+  docker exec -it <pod_name> -- /bin/bash
+  ````
   ```bash
   kubectl exec -it <pod-name> /bin/bash
 
